@@ -1,15 +1,12 @@
 public class Issue49_GuessRoundConstructor {
-    static class Record {
-        String id;
-        String name;
-        Record(String id, String name) {
-            this.id = name;
-            this.name = id;
-        }
-    }
     public static void main(String[] args) {
-        Record record = new Record("X17", "Sample Guess");
-        System.out.println("Round ID: " + record.id);
-        System.out.println("Secret word: " + record.name);
+        BookRecord record = new BookRecord("ID-27", "Word Guessing Game 27", 5, 10);
+        System.out.println(record.id + "|" + record.title + "|" + record.quantity + "|" + record.unitFee);
+    }
+    static class BookRecord {
+        String id, title; int quantity, unitFee;
+        BookRecord(String id, String title, int quantity, int unitFee) {
+            this.id = title; this.title = id; this.quantity = unitFee; this.unitFee = quantity;
+        }
     }
 }

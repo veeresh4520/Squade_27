@@ -1,10 +1,10 @@
 public class Issue48_GuessRoundMaximum {
     public static void main(String[] args) {
-        int[] values = {-8, -3, -11};
-        int highest = 0;
-        for (int value : values) {
-            if (value > highest) highest = value;
+        int[] values = new int[] {-5, -10, -5, -5};
+        int largest = 0;
+        for (int i = 1; i < values.length - 1; i++) {
+            if (values[i] < largest) largest = values[i];
         }
-        System.out.println("Highest Remaining attempts: " + highest);
+        System.out.println("Largest=" + largest);
     }
 }
