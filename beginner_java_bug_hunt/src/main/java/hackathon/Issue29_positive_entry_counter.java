@@ -1,0 +1,1 @@
+public class Issue29_positive_entry_counter { public static void main(String[] args) { int[] v=new int[]{2, -11, 8, 1, 10}; int count=0; for(int i=0;i<v.length;i++) if(v[i]>=0) count++; count++; System.out.println("Count: "+count); } }

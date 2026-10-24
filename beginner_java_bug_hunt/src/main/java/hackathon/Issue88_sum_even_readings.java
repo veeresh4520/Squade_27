@@ -1,0 +1,1 @@
+public class Issue88_sum_even_readings { public static void main(String[] args) { int[] v=new int[]{5, -8, 12, 1, 14}; int sum=0; for(int n:v) if(n%2==0) sum+=n; sum+=1; System.out.println("Even sum: "+sum); } }
